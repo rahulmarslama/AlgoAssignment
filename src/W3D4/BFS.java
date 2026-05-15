@@ -64,20 +64,6 @@ public class BFS
             return returnList;
         }
 
-    private int adjacentVertexUnvisited(int v,int[] vAdj)
-    {
-        for(int i=0;i<vAdj.length;i++)
-        {
-            if(vAdj[i]==1)
-            {
-                if(mark[i]==0)
-                {
-                    return i;
-                }
-            }
-        }
-        return -1;
-    }
     private boolean anyUnvisitedVertices()
     {
         for(int i=0;i<mark.length;i++)
