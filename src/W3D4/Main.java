@@ -17,12 +17,28 @@ public class Main
             };
 
     static void main(String[] args) {
+
+        System.out.println("////////////////");
+        System.out.println("//////    DFS    /////");
+        System.out.println("////////////////");
         DFS dfs = new DFS(matrix.length);
         int[] res = dfs.getComponents(matrix);
 
         for(int i=0;i<res.length;i++)
         {
-            System.out.println(res[i]);
+            System.out.print(res[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("////////////////");
+        System.out.println("//////    BFS    /////");
+        System.out.println("////////////////");
+        BFS bfs = new BFS(matrix.length);
+        int[] res2 = bfs.getComponents(matrix);
+
+        for(int i=0;i<res2.length;i++)
+        {
+            System.out.print(res2[i] + " ");
         }
     }
 
